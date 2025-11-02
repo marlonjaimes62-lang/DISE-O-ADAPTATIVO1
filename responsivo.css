@@ -1,0 +1,133 @@
+ body {
+ margin: 0;
+padding: 0;
+font-family: sans-serif;
+text-align: center;
+color: white;
+transition: background-color 0.5s ease;
+}
+
+ h1 {
+margin-top: 100px;
+ }
+
+ body {
+ background-color: blue; 
+ }
+
+   @media (max-width: 768px) {
+  body {
+  background-color: green; 
+ }
+ }
+
+  @media (max-width: 480px) {
+ body {
+ background-color: red; 
+ }
+ }
+.contenedor {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ padding: 2opx;
+
+ }
+ .caja{
+  background-color: greenyellow;
+ color: white;
+ padding:30px
+ text-align:center;
+  border-radius 6px;
+ 
+}
+@media (min-wdth:768px){
+.contenedor{
+ flex-direction: row;
+flex-wrap:wrap;
+ }
+.caja{
+width: 35%;
+ }
+}
+ @media (min-width: 992px) {
+.caja {
+ width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+.caja {
+font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    font-family:helvetica ;
+  }
+}
+.card{
+  width: 320px;
+  background-color: #f2f2f2;
+  padding: 0.5em;
+  margin: 0.8em;
+  display: inline-block;
+}
+.card img{
+  display: block;
+  max-height: 280px;
+  margin: 16px auto;
+  filter: drop-shadow(2px 0px 8px #515151);
+}
+.card{
+  border-radius: 8px;
+}
+
+@media print {
+  body {
+    background-color: white;
+    color: blueviolet;
+  }  }
+.container{
+  background-color: white;
+  color: black;
+}
+@media (max-width: 600px) {
+  .container {
+    flex: 100%;
+  }
+}
+@media (max-width: 600px) { 
+  .parrafoo{
+    font-size: 2.4rem;
+    padding: 1.5rem;
+    color: darkorange;
+
+  }
+
+  }
+  @media (max-width: 600px) { 
+.imagen1{
+  width: 100%;
+  height: auto;
+
+}
+
+}
+@media (max-width: 900px)(min-width: 800px) { 
+.imagen2{
+  width: 100%;
+  height: auto;
+
+}
+
+}
+/* se utilizaron las media queries para hacer el diseño adaptativo y poder lograr deplazar elementos como las card a 
+partes en las cuales de manera visual se adaptaran de mejor manera, logrando una mejor experiencia, tambien hacee desplazar las barras hacia areas
+ las partes del contenedor para pantallas pequeñas.
+ en los formularios se logro colocar la descripcion encima de las barras cuando se quiera visualizar en telefonos 
+ disminuyendo el espacio en la pantalla.*/
+ 
+
+
+
