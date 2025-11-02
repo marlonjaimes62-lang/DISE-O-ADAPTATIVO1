@@ -122,6 +122,50 @@ font-size: 1.5rem;
 }
 
 }
+.img1 {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.img2 {
+  display: none;
+}
+
+.img3 {
+  display: none;
+}
+
+@media (min-width: 700px) and (max-width: 1280px) {
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .img2 {
+    display: none;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .img3 {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
 /* se utilizaron las media queries para hacer el diseño adaptativo y poder lograr deplazar elementos como las card a 
 partes en las cuales de manera visual se adaptaran de mejor manera, logrando una mejor experiencia, tambien hacee desplazar las barras hacia areas
  las partes del contenedor para pantallas pequeñas.
